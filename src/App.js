@@ -2,15 +2,12 @@ import { Switch,Route } from "react-router";
 import Homepage from "./pages/homepage/Homepage";
 import ShopPage from './pages/shop/Shop.jsx'
 import './App.css'
-const Hats=()=>{
-  return(
-    <h2>Hats page</h2>
-  )
-}
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
+      <Header/>
       <Switch>
        <Route exact path="/" component={Homepage}/>     
        <Route path="/shop" component={ShopPage}/>     
